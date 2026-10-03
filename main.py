@@ -377,13 +377,35 @@ def run_experiment(num_frames=NUM_FRAMES, total_refs=TOTAL_REFS):
            f"{'Phase1 HR':>9s} | {'Phase2 HR':>9s} | {'Degradation':>11s}")
     print(hdr)
     print("  " + "-" * (len(hdr) - 2))
+    table_lines = [hdr, "  " + "-" * (len(hdr) - 2)]
     for name in algorithms:
         r = results[name]
         deg = r["phase1_hit_ratio"] - r["phase2_hit_ratio"]
-        print(f"  {name:10s} | {r['total_faults']:7d} | "
-              f"{r['hit_ratio']:9.4f} | {r['phase1_hit_ratio']:9.4f} | "
-              f"{r['phase2_hit_ratio']:9.4f} | {deg:+11.4f}")
+        line = (f"  {name:10s} | {r['total_faults']:7d} | "
+                f"{r['hit_ratio']:9.4f} | {r['phase1_hit_ratio']:9.4f} | "
+                f"{r['phase2_hit_ratio']:9.4f} | {deg:+11.4f}")
+        print(line)
+        table_lines.append(line)
     print()
+
+    # ── Update README.md ──
+    readme_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "README.md")
+    if os.path.exists(readme_path):
+        import re
+        with open(readme_path, "r") as f:
+            content = f.read()
+        
+        table_body = "\n".join(table_lines)
+        # Find the markdown code block right after the 'prints a table like' text
+        new_content = re.sub(
+            r"(After running `main\.py`, the console prints a table like:\n\n```\n).*?(\n```)",
+            r"\g<1>" + table_body + r"\2",
+            content,
+            flags=re.DOTALL
+        )
+        with open(readme_path, "w") as f:
+            f.write(new_content)
+        print("  Updated README.md with the latest table.")
 
     # ── Save CSV ──
     rows = []

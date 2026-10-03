@@ -175,11 +175,11 @@ After running `main.py`, the console prints a table like:
 
 ```
   Algorithm  |  Faults | Hit Ratio | Phase1 HR | Phase2 HR | Degradation
-  -------------------------------------------------------------------------
-  FIFO       |    XXXX |    0.XXXX |    0.XXXX |    0.XXXX |    +0.XXXX
-  LRU        |    XXXX |    0.XXXX |    0.XXXX |    0.XXXX |    +0.XXXX
-  Optimal    |    XXXX |    0.XXXX |    0.XXXX |    0.XXXX |    +0.XXXX
-  Learned    |    XXXX |    0.XXXX |    0.XXXX |    0.XXXX |    +0.XXXX
+  ----------------------------------------------------------------------
+  FIFO       |    5885 |    0.4115 |    0.3338 |    0.4892 |     -0.1554
+  LRU        |    5572 |    0.4428 |    0.3980 |    0.4876 |     -0.0896
+  Optimal    |    2914 |    0.7086 |    0.7628 |    0.6544 |     +0.1084
+  Learned    |    4339 |    0.5661 |    0.6436 |    0.4886 |     +0.1550
 ```
 
 Four plots are also generated in the `results/` directory, visualizing the comparison across algorithms:
