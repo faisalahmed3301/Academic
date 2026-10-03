@@ -1,85 +1,91 @@
-|--- recency <= 4.50
-|   |--- age <= 4.50
+|--- recency <= 3.50
+|   |--- age <= 3.50
 |   |   |--- frequency <= 28.50
-|   |   |   |--- frequency <= 21.50
-|   |   |   |   |--- recency <= 3.50
-|   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |--- recency >  3.50
-|   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |--- frequency >  21.50
-|   |   |   |   |--- class: 1
-|   |   |--- frequency >  28.50
-|   |   |   |--- recency <= 2.50
-|   |   |   |   |--- recency <= 1.50
-|   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |--- recency >  1.50
-|   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |--- recency >  2.50
-|   |   |   |   |--- recency <= 3.50
-|   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |--- recency >  3.50
-|   |   |   |   |   |--- truncated branch of depth 5
-|   |--- age >  4.50
-|   |   |--- recency <= 2.50
-|   |   |   |--- recency <= 1.50
-|   |   |   |   |--- age <= 12.50
+|   |   |   |--- frequency <= 17.50
+|   |   |   |   |--- frequency <= 2.50
 |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |--- age >  12.50
+|   |   |   |   |--- frequency >  2.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |--- frequency >  17.50
+|   |   |   |   |--- age <= 1.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- age >  1.50
+|   |   |   |   |   |--- class: 1
+|   |   |--- frequency >  28.50
+|   |   |   |--- recency <= 1.50
+|   |   |   |   |--- frequency <= 134.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- frequency >  134.50
 |   |   |   |   |   |--- truncated branch of depth 6
 |   |   |   |--- recency >  1.50
-|   |   |   |   |--- age <= 12.50
-|   |   |   |   |   |--- truncated branch of depth 3
-|   |   |   |   |--- age >  12.50
+|   |   |   |   |--- frequency <= 498.50
 |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |--- recency >  2.50
-|   |   |   |--- recency <= 3.50
-|   |   |   |   |--- frequency <= 16.50
-|   |   |   |   |   |--- class: 1
-|   |   |   |   |--- frequency >  16.50
-|   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |--- recency >  3.50
-|   |   |   |   |--- frequency <= 603.50
-|   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |--- frequency >  603.50
+|   |   |   |   |--- frequency >  498.50
 |   |   |   |   |   |--- truncated branch of depth 4
-|--- recency >  4.50
-|   |--- frequency <= 23.50
-|   |   |--- age <= 12.50
-|   |   |   |--- age <= 10.50
-|   |   |   |   |--- age <= 8.50
+|   |--- age >  3.50
+|   |   |--- recency <= 1.50
+|   |   |   |--- frequency <= 653.50
+|   |   |   |   |--- age <= 11.50
+|   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |--- age >  11.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |--- frequency >  653.50
+|   |   |   |   |--- age <= 90.00
 |   |   |   |   |   |--- truncated branch of depth 5
-|   |   |   |   |--- age >  8.50
-|   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |--- age >  10.50
-|   |   |   |   |--- class: 1
-|   |   |--- age >  12.50
-|   |   |   |--- age <= 24.50
-|   |   |   |   |--- frequency <= 8.50
-|   |   |   |   |   |--- class: 0
-|   |   |   |   |--- frequency >  8.50
+|   |   |   |   |--- age >  90.00
 |   |   |   |   |   |--- class: 1
-|   |   |   |--- age >  24.50
-|   |   |   |   |--- frequency <= 20.50
-|   |   |   |   |   |--- class: 0
-|   |   |   |   |--- frequency >  20.50
-|   |   |   |   |   |--- class: 0
-|   |--- frequency >  23.50
-|   |   |--- recency <= 6.50
-|   |   |   |--- frequency <= 726.50
-|   |   |   |   |--- age <= 7.50
+|   |   |--- recency >  1.50
+|   |   |   |--- recency <= 2.50
+|   |   |   |   |--- frequency <= 18.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- frequency >  18.50
 |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |   |--- age >  7.50
+|   |   |   |--- recency >  2.50
+|   |   |   |   |--- age <= 111.50
 |   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |--- frequency >  726.50
-|   |   |   |   |--- class: 1
-|   |   |--- recency >  6.50
-|   |   |   |--- age <= 166.50
-|   |   |   |   |--- frequency <= 55.50
+|   |   |   |   |--- age >  111.50
 |   |   |   |   |   |--- truncated branch of depth 4
-|   |   |   |   |--- frequency >  55.50
-|   |   |   |   |   |--- truncated branch of depth 6
-|   |   |   |--- age >  166.50
-|   |   |   |   |--- recency <= 7.50
+|--- recency >  3.50
+|   |--- frequency <= 21.50
+|   |   |--- age <= 14.50
+|   |   |   |--- age <= 10.50
+|   |   |   |   |--- age <= 6.50
+|   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- age >  6.50
+|   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |--- age >  10.50
+|   |   |   |   |--- frequency <= 7.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- frequency >  7.50
+|   |   |   |   |   |--- class: 1
+|   |   |--- age >  14.50
+|   |   |   |--- age <= 22.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- age >  22.50
+|   |   |   |   |--- frequency <= 16.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- frequency >  16.50
 |   |   |   |   |   |--- truncated branch of depth 2
-|   |   |   |   |--- recency >  7.50
+|   |--- frequency >  21.50
+|   |   |--- recency <= 6.50
+|   |   |   |--- recency <= 4.50
+|   |   |   |   |--- frequency <= 642.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |--- frequency >  642.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |--- recency >  4.50
+|   |   |   |   |--- age <= 5.50
+|   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |--- age >  5.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |--- recency >  6.50
+|   |   |   |--- recency <= 10.50
+|   |   |   |   |--- age <= 161.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |--- age >  161.50
 |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |--- recency >  10.50
+|   |   |   |   |--- age <= 171.50
+|   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |--- age >  171.50
+|   |   |   |   |   |--- truncated branch of depth 2

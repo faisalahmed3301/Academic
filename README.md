@@ -214,7 +214,7 @@ An AI coding assistant was used for implementation scaffolding. All experimental
 
 ## Observation
 
-During local testing on a MacBook Air, it was noted that running the script without any arguments consistently produces the exact same result outputs. This behavior is intentional; a fixed random seed is hardcoded into the experiment to ensure scientific reproducibility, guaranteeing that the generated data perfectly matches the documented results in the academic report.
+During local testing on macOS , it was noted that running the script without any arguments consistently produces the exact same result outputs. This behavior is intentional; a fixed random seed is hardcoded into the experiment to ensure scientific reproducibility, guaranteeing that the generated data perfectly matches the documented results in the academic report.
 
 To observe the algorithms' behavior under dynamically generated, varied workloads on each run, the simulation can be forced to use a pseudo-random seed via the terminal (on macOS/Linux):
 
