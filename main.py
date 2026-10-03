@@ -403,12 +403,12 @@ def run_experiment(num_frames=NUM_FRAMES, total_refs=TOTAL_REFS):
     df = pd.DataFrame(rows)
     csv_path = os.path.join(RESULTS_DIR, "summary_table.csv")
     df.to_csv(csv_path, index=False)
-    print(f"  Summary table → {csv_path}")
+    print(f"  Summary table → {os.path.relpath(csv_path)}")
 
     # ── Generate plots ──
     _generate_plots(results, algorithms, shift_idx, len(test_trace))
 
-    print(f"\n  All outputs saved to {RESULTS_DIR}/")
+    print(f"\n  All outputs saved to {os.path.relpath(RESULTS_DIR)}/")
     print(sep)
     return results, df
 

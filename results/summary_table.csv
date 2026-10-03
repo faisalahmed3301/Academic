@@ -1,0 +1,5 @@
+Algorithm,Total Faults,Total Hit Ratio,Phase 1 Faults,Phase 1 Hit Ratio,Phase 2 Faults,Phase 2 Hit Ratio,Degradation (ΔHR)
+FIFO,5849,0.4151,3267,0.3466,2582,0.4836,-0.137
+LRU,5531,0.4469,2951,0.4098,2580,0.484,-0.0742
+Optimal,2886,0.7114,1167,0.7666,1719,0.6562,0.1104
+Learned,4041,0.5959,1463,0.7074,2578,0.4844,0.223

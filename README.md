@@ -31,7 +31,7 @@ The classifier is trained **exclusively on locality-heavy data**, so Phase 2 act
 ## Repository Structure
 
 ```
-CSE307_TermPaper/
+.
 ├── main.py              # Complete implementation (algorithms, training, experiments, plots)
 ├── requirements.txt     # Python dependencies
 ├── README.md            # This file
@@ -55,12 +55,25 @@ CSE307_TermPaper/
 
 ### Setup
 
+We recommend using a virtual environment to install dependencies cleanly.
+
 ```bash
-cd CSE307_TermPaper
+# 1. Create a virtual environment
+python3 -m venv .venv
+
+# 2. Activate the virtual environment
+# On macOS/Linux:
+source .venv/bin/activate
+# On Windows:
+# .venv\Scripts\activate
+
+# 3. Install required packages
 pip install -r requirements.txt
 ```
 
 ### Run the Experiment
+
+Once your virtual environment is active (your prompt should show `(.venv)`), you can simply run:
 
 ```bash
 python main.py
@@ -107,6 +120,18 @@ Four plots are also generated — see the `results/` directory for details.
 ## AI Disclosure
 
 An AI coding assistant was used for implementation scaffolding. All experimental design, result analysis, and report writing are original work by the author.
+
+---
+
+## Observation
+
+During local testing on a MacBook Air, it was noted that running the script without any arguments consistently produces the exact same result outputs. This behavior is intentional; a fixed random seed is hardcoded into the experiment to ensure scientific reproducibility, guaranteeing that the generated data perfectly matches the documented results in the academic report.
+
+To observe the algorithms' behavior under dynamically generated, varied workloads on each run, the simulation can be forced to use a pseudo-random seed via the terminal (on macOS/Linux):
+
+```bash
+.venv/bin/python main.py --seed $RANDOM
+```
 
 ---
 
