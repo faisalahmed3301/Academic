@@ -182,8 +182,19 @@ After running `main.py`, the console prints a table like:
   Learned    |    XXXX |    0.XXXX |    0.XXXX |    0.XXXX |    +0.XXXX
 ```
 
-Four plots are also generated — see the `results/` directory for details.
+Four plots are also generated in the `results/` directory, visualizing the comparison across algorithms:
 
+### 1. Total Faults
+![Total Faults](results/total_faults.png)
+
+### 2. Hit Ratio by Phase
+![Hit Ratio by Phase](results/hit_ratio_by_phase.png)
+
+### 3. Degradation Across Shift
+![Degradation](results/degradation.png)
+
+### 4. Fault Rate Timeline
+![Fault Rate Timeline](results/fault_rate_timeline.png)
 ---
 
 ## Key Findings
