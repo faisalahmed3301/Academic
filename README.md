@@ -1,7 +1,8 @@
 # CSE-307: Learned Page Replacement — Term Paper (Track 1)
 
-**Course:** CSE-307 Operating Systems (Spring 2026, Section B)  
-**Author:** Faisal Ahmed  
+**Course:** CSE-307 Operating Systems (Spring 2026)  
+**Author:** Faisal Ahmed Saad 
+**ID:** 202414020
 **Topic:** Learning-Augmented OS Heuristics — Classical Algorithms Meet Adaptive Prediction
 
 ---
